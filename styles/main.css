@@ -45,7 +45,7 @@
   position: -webkit-sticky;
   top:0px;
   width: 100vw;
-  box-shadow: 0px 2px 4px black;
+  /*box-shadow: 0px 2px 4px black;*/
   z-index: 2;
 
 }
@@ -55,10 +55,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00000050;
-    font-family: Helvetica Neue, Helvetica, Ubuntu;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);  
+    background-color: #30303099;
+    font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);  
     width: 100vw;
     text-align: center;
 
@@ -73,7 +73,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 8px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     text-rendering: optimizeLegibility;
 /*    text-shadow: 0px 2px 2px black;*/
@@ -93,7 +93,7 @@ li a:hover {
 
 h1
 {
-  font-family: Helvetica Neue, Helvetica, Ubuntu;
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
 	font-size: 64px;
 	color: black;
   font-weight: normal;
@@ -101,14 +101,14 @@ h1
 
 h2
 {
-  font-family: Helvetica Neue, Helvetica, Ubuntu;
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
 	font-size: 54px;
 	font-weight: bolder;
 }
 
 h3
 {
-  font-family: Helvetica Neue, Helvetica, Ubuntu;
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
 	font-size: 14px;
 	font-weight: lighter;
 }
@@ -125,7 +125,7 @@ hr {
 
 p
 {
-	font-family: Helvetica Neue, Helvetica, Ubuntu;
+	font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
 	font-weight: regular;
 	width:65%;
   color: black;
@@ -182,13 +182,6 @@ p
 {
 	width:50%;
 	max-width: 768px;
-}
-
-#badpr
-{
-  width: 60%;
-  font-family: Helvetica Neue, Helvetica, Ubuntu;
-  font-weight: lighter;
 }
 
 #smol img
@@ -256,7 +249,7 @@ iframe
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    font-family: Helvetica Neue, Helvetica, Ubuntu;
+    font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
     box-shadow: 0px 2px 4px grey;
     border-radius: 34px;
 }
@@ -285,6 +278,7 @@ iframe
 #tweets
 {
   width: 65%;
+  max-width: 1200px;
 }
 
 #commstext
