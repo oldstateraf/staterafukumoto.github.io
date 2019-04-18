@@ -16,8 +16,10 @@
 
 <body>
 <div id="header">
+    <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
     <center><img id="hlogo" draggable="false" src="img/wordmark_white.png"></center> <!--i don't give a fuck that the center tag is depreciated-->
 </div>
+<div id="shadow" onclick="flipIn()"></div>
 <!-- left wrapper -->
 <div id="leftwrapper">
 <div id="contentLeft">
@@ -25,7 +27,7 @@
         <a href="https://www.furaffinity.net/view/30175642/" target="_blank">
             <img class="nosaveimg" id="artfeature" src="img/feature.png" draggable="false">
         </a>
-        <span class="featuretitle"> featured piece: <span class="artname"> statera lucifur </span></span>
+        <span class="featuretitle"> featured piece: <span class="artname"> statera as lucifur </span></span>
         <br> <!-- fuck setting 'display: block' i've had enough modern web shit for now-->
         <span class="featuretitle"> done by: <span class="artistname"> statera fukumoto </span></span>
 </div>
@@ -64,14 +66,14 @@
 
 <center>
 <div class="card">
-    <span class="header"> telegram sticker packs of me </span>
+    <span class="header"> telegram stickers of mine </span>
     <hr>
-    <a href="https://t.me/addstickers/staterafukumoto" class=""><img width="250px"src="img/mainpack.png"></a>
-    <a href="https://t.me/addstickers/stateramemes" class=""><img width="250px"src="img/memepack.png"></a>
+    <a href="https://t.me/addstickers/staterafukumoto" target="_blank"><img width="250px"src="img/mainpack.png"></a>
+    <a href="https://t.me/addstickers/stateramemes" target="_blank"><img width="250px"src="img/memepack.png"></a>
 </div>
 
 <div class="card">
-    <span class="header"> the statera spotify playlists </span>
+    <span class="header"> this is statera spotify playlists </span>
     <hr>
     <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/0uCSDyqqJftYPA4cCmGx2E?si=O-rOsrAxTJ2jnhJOOxv1_g" target="_blank">
         <img width="250px" src="img/playlists/this is statera.jpg"></a>
@@ -94,4 +96,6 @@
 
 </center>
 </div>
+
+<script src="scripts/response.js"></script>
 </body>
