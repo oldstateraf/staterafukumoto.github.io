@@ -1,4 +1,3 @@
-
 function checkWidth(){
     var width= window.innerWidth
     if (mobilecheck() == true){
