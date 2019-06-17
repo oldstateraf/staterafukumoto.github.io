@@ -10,11 +10,14 @@
         crossorigin="anonymous"
     >
     <link rel="icon" href="icon.ico">
-    <meta name="description" content="gay furry trash that likes pixels, odd music, and the fires of hell.">
+    <meta name="description" content="everything statera!">
     <meta name="keywords" content="statera, statera fukumoto, lykos, alopix, furry">
 </head>
 
 <body>
+
+<input type="text" id="copybox">
+
 <div id="header">
     <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
     <center><img id="hlogo" draggable="false" src="img/wordmark_white.png"></center> <!--i don't give a fuck that the center tag is depreciated-->
@@ -69,14 +72,14 @@
 
 <center>
 <div class="card" id="stickers">
-    <span class="header" id="stickers"> telegram stickers of mine </span>
+    <span class="header" id="stickers" onclick="copyClipboard(this.id)" title="Click to Copy URL"> telegram stickers of mine </span>
     <hr>
     <a href="https://t.me/addstickers/staterafukumoto" target="_blank"><img width="250px"src="img/mainpack.png"></a>
     <a href="https://t.me/addstickers/stateramemes" target="_blank"><img width="250px"src="img/memepack.png"></a>
 </div>
 
 <div class="card" id="playlists">
-    <span class="header"> my spotify playlists </span>
+    <span class="header" id="playlists" onclick="copyClipboard(this.id)" title="Click to Copy URL"> my spotify playlists </span>
     <hr>
     <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/0uCSDyqqJftYPA4cCmGx2E?si=O-rOsrAxTJ2jnhJOOxv1_g" target="_blank">
         <img width="250px" src="img/playlists/this is statera.jpg"></a>
@@ -93,7 +96,7 @@
 </div>
 
 <div class="card" id="tweets">
-    <span class="header"> my garbage tweets </span>
+    <span class="header" id="tweets" onclick="copyClipboard(this.id)" title="Click to Copy URL"> my garbage tweets </span>
     <hr>
     <a class="twitter-timeline" 
         href="https://twitter.com/staterafukumoto?ref_src=twsrc%5Etfw">
@@ -105,4 +108,6 @@
 </div>
 
 <script src="scripts/response.js"></script>
+<script src="scripts/clipboardlogic.js"></script>
+<script src="scripts/waywork.js"></script>
 </body>
