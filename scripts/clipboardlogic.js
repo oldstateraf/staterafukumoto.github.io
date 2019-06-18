@@ -22,7 +22,7 @@ function copyClipboard(input){
     cpbx.select()
     document.execCommand('copy')
     cpbx.blur()
-    createColorToast('Copied URL to Clipboard!')
+    // createToast('copied card link to clipboard')
     // alert('copied text')
-
+    notificationInput('copied url to clipboard')
 }

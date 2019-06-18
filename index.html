@@ -9,6 +9,8 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous"
     >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+           rel="stylesheet">
     <link rel="icon" href="icon.ico">
     <meta name="description" content="everything statera!">
     <meta name="keywords" content="statera, statera fukumoto, lykos, alopix, furry">
@@ -17,6 +19,10 @@
 <body>
 
 <input type="text" id="copybox">
+
+<div id="notification">
+    copied to clipboard
+</div>
 
 <div id="header">
     <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
@@ -47,7 +53,7 @@
             class="somelink spotify"> <i class="fab fa-spotify"></i> spotify </a>
     <a href="https://github.com/wayoutware" target="_blank" class="somelink github"> <i class="fab fa-github"></i> github </a>
     <a href="https://www.furaffinity.net/user/statera" target="_blank" class="somelink furaffinity"> <i class="fas fa-feather-alt"></i> furaffinity </a>
-    <a class="somelink paypal disabled" title="Temporarily Disabled"> <i class="fab fa-paypal"></i> donate with paypal </a>
+    <a class="somelink paypal disabled" onclick="notificationInput('paypal account borked')"> <i class="fab fa-paypal"></i> donate with paypal </a>
 </div>
 
 
@@ -71,15 +77,17 @@
 <!-- don't forget to assign ID attributes to allow for linking of specific cards -->
 
 <center>
-<div class="card" id="stickers">
-    <span class="header" id="stickers" onclick="copyClipboard(this.id)" title="Click to Copy URL"> telegram stickers of mine </span>
+<div class="card">
+    <span class="header"> telegram stickers of mine </span>
+    <i class="material-icons link" id="stickers" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
     <a href="https://t.me/addstickers/staterafukumoto" target="_blank"><img width="250px"src="img/mainpack.png"></a>
     <a href="https://t.me/addstickers/stateramemes" target="_blank"><img width="250px"src="img/memepack.png"></a>
 </div>
 
 <div class="card" id="playlists">
-    <span class="header" id="playlists" onclick="copyClipboard(this.id)" title="Click to Copy URL"> my spotify playlists </span>
+    <span class="header"> my spotify playlists </span>
+    <i class="material-icons link" id="playlists" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
     <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/0uCSDyqqJftYPA4cCmGx2E?si=O-rOsrAxTJ2jnhJOOxv1_g" target="_blank">
         <img width="250px" src="img/playlists/this is statera.jpg"></a>
@@ -96,7 +104,8 @@
 </div>
 
 <div class="card" id="tweets">
-    <span class="header" id="tweets" onclick="copyClipboard(this.id)" title="Click to Copy URL"> my garbage tweets </span>
+    <span class="header"> my garbage tweets </span>
+    <i class="material-icons link" id="tweets" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
     <a class="twitter-timeline" 
         href="https://twitter.com/staterafukumoto?ref_src=twsrc%5Etfw">
@@ -110,4 +119,5 @@
 <script src="scripts/response.js"></script>
 <script src="scripts/clipboardlogic.js"></script>
 <script src="scripts/waywork.js"></script>
+<script src="scripts/nf.js"></script>
 </body>
