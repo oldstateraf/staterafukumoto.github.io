@@ -8,7 +8,5 @@ function copyClipboard(input){
     cpbx.select()
     document.execCommand('copy')
     cpbx.blur()
-    // createToast('copied card link to clipboard')
-    // alert('copied text')
     notificationInput('copied url to clipboard')
 }
