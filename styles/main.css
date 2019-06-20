@@ -353,7 +353,7 @@ a{
 #countdowndisplay{
     color: white;
     background: black;
-    font-size: 28px;
+    font-size: 32px;
     font-family: monospace;
     user-select: none;
 
@@ -367,6 +367,4 @@ a{
 
     border-radius: 0px;
     border: 1px solid white;
-
-    /* box-shadow: inset 0px 0px 28px -5px rgba(255,255,255,0.8); */
 }

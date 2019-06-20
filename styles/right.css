@@ -23,3 +23,20 @@
     color: #ededed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif;
 }
+
+.linkbutton{
+    color: white;
+    background: #212121;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    transition: 0.2s all ease;
+    border-bottom: 2px solid #009cde;
+}
+
+.linkbutton:hover{
+    border-bottom: 2px solid #faaf3a;
+}
