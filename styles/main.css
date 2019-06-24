@@ -268,37 +268,6 @@ a{
     display: none;
 }
 
-.link{
-    transition: 0.3s opacity ease,
-                0.3s transform ease,
-                0.3s background ease,
-                0.3s color ease,
-                0.3s border ease;
-    cursor: pointer;
-    color: #adadad;
-    transform: scale(1);
-    border-radius: 999px;
-    user-select: none;
-    border: 2px solid transparent;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-
-    background: rgba(255,255,255,0.05);
-}
-
-.link:hover{
-    transform: rotate(180deg);
-    color: white;
-    background: rgba(255,255,255,0.2);
-
-    border-left: 2px solid #faaf3a;
-    border-top: 2px solid #faaf3a;
-    border-bottom: 2px solid #009cde;
-    border-right: 2px solid #009cde;
-}
-
 /* .link:active{
 } */
 
@@ -350,21 +319,51 @@ a{
     width: 360px !important;
 }
 
-#countdowndisplay{
+.linkbutton{
     color: white;
-    background: black;
-    font-size: 32px;
-    font-family: monospace;
-    user-select: none;
-
-    cursor: default;
-    display: inline-block;
+    /* background: #212121; */
 
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    transition: 0.2s all ease;
+    border-bottom: 2px solid #009cde;
+}
 
-    border-radius: 0px;
-    border: 1px solid white;
+.linkbutton:hover{
+    border-bottom: 2px solid #faaf3a;
+}
+
+.link{
+    transition: 0.3s opacity ease,
+                0.3s transform ease,
+                0.3s background ease,
+                0.3s color ease,
+                0.3s border ease,
+                0.3s border-radius ease;
+    cursor: pointer;
+    color: #adadad;
+    transform: scale(1);
+    border-radius: 30px;
+    user-select: none;
+    border: 2px solid transparent;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+
+    background: rgba(255,255,255,0.05);
+}
+
+.link:hover{
+    transform: rotate(180deg);
+    color: white;
+    background: rgba(255,255,255,0.2);
+
+    border-left: 2px solid #faaf3a;
+    border-top: 2px solid #faaf3a;
+    border-bottom: 2px solid #009cde;
+    border-right: 2px solid #009cde;
 }
