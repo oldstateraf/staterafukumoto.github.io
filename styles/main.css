@@ -321,6 +321,7 @@ a{
 
 .linkbutton{
     color: white;
+    user-select: none;
     /* background: #212121; */
 
     padding-left: 15px;
