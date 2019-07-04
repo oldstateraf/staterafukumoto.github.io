@@ -73,17 +73,6 @@ body{
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
 }
-
-#cardwrapper{
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 0px;
-    top: 56px;
-    align-content: center;
-    overflow-y: scroll;
-}
-
 .container{
     background: #242528;
     display: inline-block;
@@ -127,4 +116,14 @@ body{
     user-select: none;
     font-style: italic;
     font-size: 12px;
+}
+
+#cardwrapper{
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+    z-index: 0;
+    overflow: auto;
 }
