@@ -2,6 +2,11 @@ body{
     background: #111;
 }
 
+*{
+    /* for a super secret april fool's surprise */
+    /* font-family: "Comic Sans MS"; */
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -189,54 +194,6 @@ a{
     opacity: 0.3 !important;
     font-style: italic;
     font-weight: 100;
-}
-
-.twitter{
-    color: #1da1f2;
-}
-
-.telegram{
-    color: #0088cc;
-}
-
-.telegramgroup{
-    color: #c99d27;
-}
-
-.spotify{
-    color: #1db954;
-}
-
-.reddit{
-    color: #ff4500;
-}
-
-.steam{
-    color: white;
-}
-
-.github{
-    color: #6cc644;
-}
-
-.furaffinity{
-    color: #faaf3a;
-}
-
-.paypal{
-    color: #009cde;
-}
-
-.youtube{
-    color: red;
-}
-
-.linkOne{
-    color: #009cde;
-}
-
-.linkTwo{
-    color: #faaf3a;
 }
 
 .button{
