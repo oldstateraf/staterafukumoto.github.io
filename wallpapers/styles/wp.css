@@ -1,5 +1,6 @@
 body{
     background: #111;
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -76,6 +77,7 @@ body{
 .container{
     background: #242528;
     display: inline-block;
+    user-select: none;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -126,4 +128,30 @@ body{
     left: 400px;
     z-index: 0;
     overflow: auto;
+}
+
+#banner{
+    height: auto;
+    width: 100%;
+    display: block;
+    background: linear-gradient(#404040, #111111);
+    text-align: center;
+    user-select: none;
+}
+
+#bheader{
+    color: white;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#bparagraph{
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
