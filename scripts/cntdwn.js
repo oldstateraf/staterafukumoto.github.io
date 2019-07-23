@@ -26,5 +26,5 @@ function countdown(){
     + minutes + "m " + seconds + "s ";
 }
 
-window.setInterval(countdown,1000)
+// window.setInterval(countdown,1000)
 // countdown() //run on page load
