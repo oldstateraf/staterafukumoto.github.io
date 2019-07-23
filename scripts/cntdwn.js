@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 23, 2019 14:00:00").getTime();
+var countDownDate = new Date("Jul 23, 2019 15:33:00").getTime();
 
 function countdown(){
     // get today's date and time
