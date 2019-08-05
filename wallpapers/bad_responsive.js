@@ -3,11 +3,16 @@ function checkWidth(){
     if (mobilecheck() == true){
         //fuck me i got nothing
         hideSidebar()
-        document.getElementsByTagName("body")[0].style.zoom = "2"
+        mobileSidebar()
+        logoSet("icon")
     } else if(width < 842){
         hideSidebar()
+        logoSet("icon")
+        desktopSidebar()
     } else{
         showSidebar()
+        logoSet("wordmark")
+        desktopSidebar()
     }
 }
 
@@ -21,7 +26,23 @@ function showSidebar(){
     document.getElementById("leftwrapper").style.display = "block"
     document.getElementById("hamborger").style.display = "none"
     document.getElementById("cardwrapper").style.left = "400px"
+}
 
+function mobileSidebar(){
+    document.getElementById("leftwrapper").style.width = "100%"
+}
+
+function desktopSidebar(){
+    document.getElementById("leftwrapper").style.width = ""
+}
+
+function logoSet(input){
+    //accepts 'icon' or 'wordmark'
+    if (input == "icon"){
+        document.getElementById("hlogo").src = "../img/logo_white.png"
+    } else if (input == "wordmark"){
+        document.getElementById("hlogo").src = "../img/wordmark_white.png"    
+    }
 }
 
 
